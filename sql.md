@@ -1,7 +1,7 @@
 ## 统计每日用户注册数、商品发布数、形成订单数
 
-`
-	SELECT
+```
+SELECT
 	t1.createTime,
 	t1.dcount as 每日注册数,
 	t2.gcount as 每日发布商品数,
@@ -36,4 +36,4 @@ FROM
 	) t3
 WHERE
 	t1.createTime = t2.createTime and t1.createTime = t3.createTime
-	`
+```
